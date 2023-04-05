@@ -18,7 +18,9 @@ COPY ./requirements.txt ./
 RUN pip install -r requirements.txt
 COPY ./hello_world.py ./
 COPY ./gcs_api.py ./
+COPY ./gcs_to_gbq.py ./
 # CMD ["python", "hello_world.py"]
-CMD ["python", "gcs_api.py"]
+# CMD ["python", "gcs_api.py"]
+CMD ["python", "gcs_to_gbq.py"]
 
 
